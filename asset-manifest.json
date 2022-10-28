@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/shuo-ai/static/css/main.bf1fc12c.css",
+    "main.js": "/shuo-ai/static/js/main.e8f18ecb.js",
+    "static/js/787.24a5b085.chunk.js": "/shuo-ai/static/js/787.24a5b085.chunk.js",
+    "static/media/testVid.mp4": "/shuo-ai/static/media/testVid.ef99202a2cf9f7f8557d.mp4",
+    "index.html": "/shuo-ai/index.html",
+    "main.bf1fc12c.css.map": "/shuo-ai/static/css/main.bf1fc12c.css.map",
+    "main.e8f18ecb.js.map": "/shuo-ai/static/js/main.e8f18ecb.js.map",
+    "787.24a5b085.chunk.js.map": "/shuo-ai/static/js/787.24a5b085.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bf1fc12c.css",
+    "static/js/main.e8f18ecb.js"
+  ]
+}
