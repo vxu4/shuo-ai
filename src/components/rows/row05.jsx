@@ -56,8 +56,8 @@ const Row01 = ({}) => {
         <Pixel color="#B47F5D"></Pixel>
         <Pixel color="#BB805C"></Pixel>
         <Pixel color="#C38B66"></Pixel>
-        <Pixel color="#C38762"></Pixel>
         <Pixel color="#76543B"></Pixel>
+        <Pixel color="#C38762"></Pixel>
         <Pixel color="#AB7E60"></Pixel>
         <Pixel color="#9F7359"></Pixel>
         <Pixel color="#916A4E"></Pixel>
