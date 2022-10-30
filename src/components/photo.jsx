@@ -1,4 +1,5 @@
 import React from 'react';
+import Row from './rows/row';
 import Row01 from './rows/row01';
 import Row02 from './rows/row02';
 import Row03 from './rows/row03';
@@ -17,7 +18,8 @@ const Photo = ({}) => {
             flexDirection: 'column'
         }}>
             {/* pixel rows go here */}
-            <Row01></Row01>
+            {/* <Row01></Row01> */}
+            <Row />
             <Row02></Row02>
             <Row03></Row03>
             <Row04></Row04>

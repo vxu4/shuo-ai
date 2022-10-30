@@ -26,7 +26,6 @@ const Transmission = ({src}) => {
         muted
         onMouseEnter={() => setHover(true)}
         onMouseOut={() => setHover(false)}
-
         alt="phrase"
         src={src}
         ref={videoEl}
