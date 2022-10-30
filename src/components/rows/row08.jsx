@@ -3,7 +3,7 @@ import Pixel from '../pixel';
 import Transmission from '../transmission';
 import src from '../../assets/testVid.mp4';
 
-const Row01 = ({}) => {
+const Row08 = ({}) => {
     return (
         //row
         <div style={{
@@ -32,20 +32,20 @@ const Row01 = ({}) => {
         <Pixel color="#CB9877"></Pixel>
         <Pixel color="#D7A57F"></Pixel>
         <Pixel color="#D29F78"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
+        <Transmission src={src}></Transmission>
         <Pixel color="#D19E75"></Pixel>
         <Pixel color="#D19C77"></Pixel>
         <Pixel color="#D09B75"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
+        <Transmission src={src}></Transmission>
+        <Transmission src={src}></Transmission>
+        <Transmission src={src}></Transmission>
+        <Transmission src={src}></Transmission>
+        <Transmission src={src}></Transmission>
         <Pixel color="#CB956C"></Pixel>        
         <Pixel color="#CF9970"></Pixel>
         <Pixel color="#D0986E"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
-        <Pixel color="#FF0000"></Pixel>
+        <Transmission src={src}></Transmission>
+        <Transmission src={src}></Transmission>
         <Pixel color="#BD7F58"></Pixel>
         <Pixel color="#BE805A"></Pixel>
         <Pixel color="#C1835D"></Pixel>
@@ -70,4 +70,4 @@ const Row01 = ({}) => {
     );
 };
 
-export default Row01;
+export default Row08;
