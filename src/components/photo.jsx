@@ -18,7 +18,7 @@ const Photo = ({}) => {
             display: 'flex',
             flexDirection: 'column'
         }}>
-            {/* pixel rows go here */}
+            {/* pixel rows go here. note rowNum is row - 1 bc count starts at 0*/}
             <Row rowNum={0} vidNum={videoCount} />
             <Row02></Row02>
             <Row03></Row03>
@@ -28,6 +28,7 @@ const Photo = ({}) => {
             <Row07></Row07>
             <Row08></Row08>
             <Row09></Row09>
+            <Row rowNum={9} vidNum={videoCount} />
 
         </div>
     );
