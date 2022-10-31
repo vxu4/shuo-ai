@@ -1,5 +1,5 @@
-export const rowColorMap = {
-  row01: [
+export const rowColorMap = [
+    [
     "#FDFCF2",
     "#FDFCF6",
     "#FEFCF6",
@@ -56,7 +56,8 @@ export const rowColorMap = {
     "#E9CEA4",
     "#E8CFA6",
     "#E8CFA6"
+  ],
   ]
-};
+;
 
 export default rowColorMap; 

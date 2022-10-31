@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useRef} from 'react';
 import Row from './rows/row';
 import Row01 from './rows/row01';
 import Row02 from './rows/row02';
@@ -11,6 +11,7 @@ import Row08 from './rows/row08';
 import Row09 from './rows/row09';
 
 const Photo = ({}) => {
+    const videoCount = useRef(0);
     return (
         //wrapper
         <div style={{
@@ -18,8 +19,7 @@ const Photo = ({}) => {
             flexDirection: 'column'
         }}>
             {/* pixel rows go here */}
-            {/* <Row01></Row01> */}
-            <Row />
+            <Row rowNum={0} vidNum={videoCount} />
             <Row02></Row02>
             <Row03></Row03>
             <Row04></Row04>

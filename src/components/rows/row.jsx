@@ -3,10 +3,8 @@ import Pixel from '../pixel';
 import Transmission from '../transmission';
 import src from '../../assets/testVid.mp4';
 import rowColorMap from './rowColorMap';
-
-const Row = ({}) => {
-    console.log(rowColorMap);
-
+import vidSrcMap from './vidSrcMap';
+const Row = ({rowNum, vidNum}) => {
     return (
         //row
         <div style={{
@@ -14,12 +12,11 @@ const Row = ({}) => {
             flexDirection: 'row'
         }}>
             {
-                //abstract rowColorMap.row01 as a prop, and then pass in row # for key 
-                rowColorMap.row01.map((hex, i) => {
+                rowColorMap[rowNum].map((hex, i) => {
                     if (hex === '#FF0000') {
+                        vidNum.current++;
                         return (
-                            //prolly need a counter at the photo level to figure out which src in array we on
-                            <Transmission src={src} key={`countVarEventually${i}`}></Transmission>
+                            <Transmission src={vidSrcMap[0]} key={`video-${vidNum.current}`}></Transmission>
                         );
                     } else {
                         return(
