@@ -20,15 +20,27 @@ const Photo = ({}) => {
         }}>
             {/* pixel rows go here. note rowNum is row - 1 bc count starts at 0*/}
             <Row rowNum={0} vidNum={videoCount} />
-            <Row02></Row02>
+            <Row rowNum={1} vidNum={videoCount} />
+            <Row rowNum={2} vidNum={videoCount} />
+            <Row rowNum={3} vidNum={videoCount} />
+            <Row rowNum={4} vidNum={videoCount} />
+            <Row rowNum={5} vidNum={videoCount} />
+            <Row rowNum={6} vidNum={videoCount} />
+            <Row rowNum={7} vidNum={videoCount} />
+            <Row rowNum={8} vidNum={videoCount} />
+            <Row rowNum={9} vidNum={videoCount} />
+            <Row rowNum={10} vidNum={videoCount} />
+            <Row rowNum={11} vidNum={videoCount} />
+
+            {/* <Row02></Row02>
             <Row03></Row03>
             <Row04></Row04>
             <Row05></Row05>
             <Row06></Row06>
             <Row07></Row07>
             <Row08></Row08>
-            <Row09></Row09>
-            <Row rowNum={9} vidNum={videoCount} />
+            <Row09></Row09> */}
+            {/* <Row rowNum={9} vidNum={videoCount} /> */}
 
         </div>
     );

@@ -50,7 +50,6 @@ const Row03 = ({}) => {
         <Transmission src={src}></Transmission>
         <Pixel color="#C18964"></Pixel>
         <Pixel color="#C48664"></Pixel>
-
         <Pixel color="#C08360"></Pixel>
         <Pixel color="#BE815D"></Pixel>
         <Pixel color="#BC8664"></Pixel>
@@ -66,7 +65,6 @@ const Row03 = ({}) => {
         <Pixel color="#684B40"></Pixel>
         <Pixel color="#6E4E40"></Pixel>
         <Pixel color="#704F41"></Pixel>
-        
         <Pixel color="#704F41"></Pixel>
         </div>
     );
