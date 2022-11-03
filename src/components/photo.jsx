@@ -31,6 +31,23 @@ const Photo = ({}) => {
             <Row rowNum={9} vidNum={videoCount} />
             <Row rowNum={10} vidNum={videoCount} />
             <Row rowNum={11} vidNum={videoCount} />
+            <Row rowNum={12} vidNum={videoCount} />
+            <Row rowNum={13} vidNum={videoCount} />
+            <Row rowNum={14} vidNum={videoCount} />
+            <Row rowNum={15} vidNum={videoCount} />
+            <Row rowNum={16} vidNum={videoCount} />
+            <Row rowNum={17} vidNum={videoCount} />
+            <Row rowNum={18} vidNum={videoCount} />
+            <Row rowNum={19} vidNum={videoCount} />
+            <Row rowNum={20} vidNum={videoCount} />
+            <Row rowNum={21} vidNum={videoCount} />
+            <Row rowNum={22} vidNum={videoCount} />
+            <Row rowNum={23} vidNum={videoCount} />
+            <Row rowNum={24} vidNum={videoCount} />
+            <Row rowNum={25} vidNum={videoCount} />
+            <Row rowNum={26} vidNum={videoCount} />
+            <Row rowNum={27} vidNum={videoCount} />
+            <Row rowNum={28} vidNum={videoCount} />
 
             {/* <Row02></Row02>
             <Row03></Row03>
