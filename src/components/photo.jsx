@@ -48,6 +48,9 @@ const Photo = ({}) => {
             <Row rowNum={26} vidNum={videoCount} />
             <Row rowNum={27} vidNum={videoCount} />
             <Row rowNum={28} vidNum={videoCount} />
+            <Row rowNum={29} vidNum={videoCount} />
+            <Row rowNum={30} vidNum={videoCount} />
+            <Row rowNum={31} vidNum={videoCount} />
 
             {/* <Row02></Row02>
             <Row03></Row03>
