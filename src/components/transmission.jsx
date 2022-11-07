@@ -17,7 +17,7 @@ const Transmission = ({src}) => {
       }, [hover]);
     
     return (
-      <div style={{ backgroundColor: 'red', margin: 0, padding: 0, height: "13px", display: 'flex', cursor: 'pointer'}}>
+      <div style={{ backgroundColor: '#FCF8EC', margin: 0, padding: 0, height: "13px", display: 'flex', cursor: 'pointer'}}>
         <video 
         controls={!hover}
         style={{ opacity: hover ? 1 : 0.33, width: "13px", height: "13px", margin: 0, padding:0 }}
