@@ -23,7 +23,7 @@ const Photo = ({}) => {
             <Row rowNum={1} vidNum={videoCount} />
             <Row rowNum={2} vidNum={videoCount} />
             <Row rowNum={3} vidNum={videoCount} />
-            <Row rowNum={4} vidNum={videoCount} />
+            {/* <Row rowNum={4} vidNum={videoCount} />
             <Row rowNum={5} vidNum={videoCount} />
             <Row rowNum={6} vidNum={videoCount} />
             <Row rowNum={7} vidNum={videoCount} />
@@ -58,7 +58,11 @@ const Photo = ({}) => {
             <Row rowNum={36} vidNum={videoCount} />
             <Row rowNum={37} vidNum={videoCount} />
             <Row rowNum={38} vidNum={videoCount} />
-            <Row rowNum={39} vidNum={videoCount} />
+            <Row rowNum={39} vidNum={videoCount} /> 
+ */}
+
+
+
             {/* <Row02></Row02>
             <Row03></Row03>
             <Row04></Row04>

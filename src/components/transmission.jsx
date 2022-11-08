@@ -3,7 +3,10 @@ import React, {useRef, useState, useEffect} from 'react';
 const Transmission = ({src}) => {
     const videoEl = useRef(null);
     const [hover, setHover] = useState(false);
-
+    const unmute = (videoEl) => {
+      videoEl.current.muted = false;
+      setHover(true);
+    }
     const attemptPlay = () => {
         videoEl && 
           videoEl.current &&
@@ -13,9 +16,11 @@ const Transmission = ({src}) => {
       };
     
       useEffect(() => {
+
         attemptPlay();
+        
       }, [hover]);
-    
+
     return (
       <div style={{ backgroundColor: '#FFFFFF', margin: 0, padding: 0, height: "13px", display: 'flex', cursor: 'pointer'}}>
         <video 
@@ -24,16 +29,13 @@ const Transmission = ({src}) => {
         playsInline
         loop
         muted
-        onMouseEnter={() => setHover(true)}
+        onMouseEnter={() => unmute(videoEl)}
         onMouseOut={() => setHover(false)}
         alt="phrase"
         src={src}
         ref={videoEl}
         width="33px">
-        {/* <source src="https://archive.org/download/BigBuckBunny_124/Content/big_buck_bunny_720p_surround.mp4" type="video/mp4" />
-        Sorry, your browser doesn't support embedded videos. */}
-        {/* <iframe src="https://player.vimeo.com/video/764561239?h=82976a45d6" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> */}
-      </video>
+        </video>
       </div>
     );
 };

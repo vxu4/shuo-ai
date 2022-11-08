@@ -11,12 +11,12 @@ const Row = ({rowNum, vidNum}) => {
             display: 'flex',
             flexDirection: 'row'
         }}>
-            {
+           {
                 rowColorMap[rowNum].map((hex, i) => {
                     if (hex === '#FF0000') {
                         vidNum.current++;
                         return (
-                            <Transmission src={vidSrcMap[0]} key={`video-${vidNum.current}`}></Transmission>
+                            <Transmission src={vidSrcMap[vidNum.current > 12 ? 12 : vidNum.current]} key={`video-${vidNum.current}`}></Transmission>
                         );
                     } else {
                         return(
