@@ -1,4 +1,5 @@
-import React, {useState, useRef} from 'react';
+import React, { useState, useRef, useContext, useEffect } from 'react';
+import { AppContext } from '../App';
 import Row from './rows/row';
 import Row01 from './rows/row01';
 import Row02 from './rows/row02';
@@ -10,8 +11,12 @@ import Row07 from './rows/row07';
 import Row08 from './rows/row08';
 import Row09 from './rows/row09';
 
-const Photo = ({}) => {
+const Photo = ({ }) => {
     const videoCount = useRef(0);
+    const { display } = useContext(AppContext);
+    useEffect(() => {
+        videoCount.current = 0;
+    }, [display]);
     return (
         //wrapper
         <div style={{
@@ -23,7 +28,7 @@ const Photo = ({}) => {
             <Row rowNum={1} vidNum={videoCount} />
             <Row rowNum={2} vidNum={videoCount} />
             <Row rowNum={3} vidNum={videoCount} />
-            {/* <Row rowNum={4} vidNum={videoCount} />
+            <Row rowNum={4} vidNum={videoCount} />
             <Row rowNum={5} vidNum={videoCount} />
             <Row rowNum={6} vidNum={videoCount} />
             <Row rowNum={7} vidNum={videoCount} />
@@ -59,7 +64,7 @@ const Photo = ({}) => {
             <Row rowNum={37} vidNum={videoCount} />
             <Row rowNum={38} vidNum={videoCount} />
             <Row rowNum={39} vidNum={videoCount} /> 
- */}
+
 
 
 
