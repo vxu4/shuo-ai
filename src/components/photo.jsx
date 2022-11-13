@@ -21,7 +21,8 @@ const Photo = ({ }) => {
         //wrapper
         <div style={{
             display: 'flex',
-            flexDirection: 'column'
+            flexDirection: 'column',
+            zIndex: 1
         }}>
             {/* pixel rows go here. note rowNum is row - 1 bc count starts at 0*/}
             <Row rowNum={0} vidNum={videoCount} />
