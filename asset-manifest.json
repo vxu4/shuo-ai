@@ -1,16 +1,32 @@
 {
   "files": {
-    "main.css": "/shuo-ai/static/css/main.bf1fc12c.css",
-    "main.js": "/shuo-ai/static/js/main.e8f18ecb.js",
+    "main.css": "/shuo-ai/static/css/main.b0de9fca.css",
+    "main.js": "/shuo-ai/static/js/main.343fe12c.js",
     "static/js/787.24a5b085.chunk.js": "/shuo-ai/static/js/787.24a5b085.chunk.js",
+    "static/media/11_IMG0655.mp4": "/shuo-ai/static/media/11_IMG0655.71327823fa24ac6e0fca.mp4",
+    "static/media/BG.png": "/shuo-ai/static/media/BG.fb13281756a8ef592247.png",
+    "static/media/01_IMG0525.mp4": "/shuo-ai/static/media/01_IMG0525.b115d3a3719713aeb091.mp4",
+    "static/media/06_IMG0442.mp4": "/shuo-ai/static/media/06_IMG0442.a31e9a2fd97858f4b201.mp4",
+    "static/media/10_IMG0543.mp4": "/shuo-ai/static/media/10_IMG0543.8115b87d77e880adbcce.mp4",
+    "static/media/13_IMG0825.mp4": "/shuo-ai/static/media/13_IMG0825.21a0274fac76a64adc3d.mp4",
+    "static/media/OG.png": "/shuo-ai/static/media/OG.13cafeadf1515b1e2e19.png",
+    "static/media/07_IMG0485.mp4": "/shuo-ai/static/media/07_IMG0485.6d89caa432df7598b67f.mp4",
+    "static/media/02_IMG0641.mp4": "/shuo-ai/static/media/02_IMG0641.d4a76d38e9d9cb085c51.mp4",
+    "static/media/08_IMG0540.mp4": "/shuo-ai/static/media/08_IMG0540.6d35017bb5e59298fee7.mp4",
+    "static/media/12_IMG0817.mp4": "/shuo-ai/static/media/12_IMG0817.d130b2fee5e92d0c5034.mp4",
+    "static/media/04_IMG0417.mp4": "/shuo-ai/static/media/04_IMG0417.8ff1bfcdecb7625c1581.mp4",
+    "static/media/05_IMG0428.mp4": "/shuo-ai/static/media/05_IMG0428.aa57bc265af757261f4a.mp4",
+    "static/media/09_IMG0541.mp4": "/shuo-ai/static/media/09_IMG0541.278583f14337859c6fd2.mp4",
+    "static/media/03_IMG0359.mp4": "/shuo-ai/static/media/03_IMG0359.ef99202a2cf9f7f8557d.mp4",
     "static/media/testVid.mp4": "/shuo-ai/static/media/testVid.ef99202a2cf9f7f8557d.mp4",
+    "static/media/13px.mp4": "/shuo-ai/static/media/13px.ef96b274a5ed43dfb722.mp4",
     "index.html": "/shuo-ai/index.html",
-    "main.bf1fc12c.css.map": "/shuo-ai/static/css/main.bf1fc12c.css.map",
-    "main.e8f18ecb.js.map": "/shuo-ai/static/js/main.e8f18ecb.js.map",
+    "main.b0de9fca.css.map": "/shuo-ai/static/css/main.b0de9fca.css.map",
+    "main.343fe12c.js.map": "/shuo-ai/static/js/main.343fe12c.js.map",
     "787.24a5b085.chunk.js.map": "/shuo-ai/static/js/787.24a5b085.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf1fc12c.css",
-    "static/js/main.e8f18ecb.js"
+    "static/css/main.b0de9fca.css",
+    "static/js/main.343fe12c.js"
   ]
 }
