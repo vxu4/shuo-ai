@@ -1,18 +1,15 @@
 {
   "files": {
     "main.css": "/shuo-ai/static/css/main.b0de9fca.css",
-    "main.js": "/shuo-ai/static/js/main.3971c406.js",
+    "main.js": "/shuo-ai/static/js/main.a96f687b.js",
     "static/js/787.24a5b085.chunk.js": "/shuo-ai/static/js/787.24a5b085.chunk.js",
-    "static/media/BG.png": "/shuo-ai/static/media/BG.fb13281756a8ef592247.png",
-    "static/media/OG.png": "/shuo-ai/static/media/OG.13cafeadf1515b1e2e19.png",
-    "static/media/testVid.mp4": "/shuo-ai/static/media/testVid.ef99202a2cf9f7f8557d.mp4",
     "index.html": "/shuo-ai/index.html",
     "main.b0de9fca.css.map": "/shuo-ai/static/css/main.b0de9fca.css.map",
-    "main.3971c406.js.map": "/shuo-ai/static/js/main.3971c406.js.map",
+    "main.a96f687b.js.map": "/shuo-ai/static/js/main.a96f687b.js.map",
     "787.24a5b085.chunk.js.map": "/shuo-ai/static/js/787.24a5b085.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b0de9fca.css",
-    "static/js/main.3971c406.js"
+    "static/js/main.a96f687b.js"
   ]
 }
