@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, createContext } from 'react';
 import Photo from './components/photo';
-import OG from './assets/OG.png'
-import BG from './assets/BG.png'
+// import OG from '/OG.png';
+// import BG from '/BG.png'
 
 export const AppContext = createContext();
 
