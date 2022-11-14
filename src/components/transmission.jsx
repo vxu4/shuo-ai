@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
-import '../App.css';
+// import '../App.css';
 import { AppContext } from '../App';
 
 const Transmission = ({ src }) => {

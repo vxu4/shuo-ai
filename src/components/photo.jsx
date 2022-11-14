@@ -1,15 +1,6 @@
 import React, { useState, useRef, useContext, useEffect } from 'react';
 import { AppContext } from '../App';
-import Row from './rows/row';
-import Row01 from './rows/row01';
-import Row02 from './rows/row02';
-import Row03 from './rows/row03';
-import Row04 from './rows/row04';
-import Row05 from './rows/row05';
-import Row06 from './rows/row06';
-import Row07 from './rows/row07';
-import Row08 from './rows/row08';
-import Row09 from './rows/row09';
+import Row from './row';
 
 const Photo = ({ }) => {
     const videoCount = useRef(0);

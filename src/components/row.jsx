@@ -1,8 +1,8 @@
 import React from 'react';
-import Pixel from '../pixel';
-import Transmission from '../transmission';
-import rowColorMap from './rowColorMap';
-import vidSrcMap from './vidSrcMap';
+import Pixel from './pixel';
+import Transmission from './transmission';
+import rowColorMap from './rows/rowColorMap';
+import vidSrcMap from './rows/vidSrcMap';
 const Row = ({ rowNum, vidNum }) => {
 
     return (

@@ -12,14 +12,12 @@ function App() {
   return (
     <AppContext.Provider value={{ display }}>
       <div className="App">
-        <div 
+        {/* <div 
         className="overlay-content" 
         style={{  
           background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
-          // opacity: display ? 0 : 1,
           display: display ? 'none' : 'flex'
         }}> 
-          {/* When I say Ai, I feel <button onClick={() => setDisplay(true)}>here</button> */}
           <img src={OG} style={{width: '720px', height: '520px'}}></img>
         </div>
 
@@ -32,12 +30,10 @@ function App() {
           color: "white",
           fontWeight: 700
         }}> 
-          {/* <img src={BG} style={{width: '100vw', height: '100vh'}}></img> */}
           When I say Ai, I feel <button onClick={() => setDisplay(true)}>here</button>
-          {/* <img src={OG} style={{width: '720px', height: '520px'}}></img> */}
-        </div>
+        </div> */}
         <Photo />
-        <div 
+        {/* <div 
         className="bg-content" 
         style={{  
           background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
@@ -47,9 +43,7 @@ function App() {
           fontWeight: 700
         }}> 
           <img src={BG} style={{width: '100vw', height: '100vh'}}></img>
-          {/* When I say Ai, I feel <button onClick={() => setDisplay(true)}>here</button> */}
-          {/* <img src={OG} style={{width: '720px', height: '520px'}}></img> */}
-        </div>
+        </div> */}
       </div>
     </AppContext.Provider>
   );
