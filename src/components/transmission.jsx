@@ -34,7 +34,7 @@ const Transmission = ({ src }) => {
         onMouseEnter={() => unmute(videoEl)}
         onMouseOut={() => setHover(false)}
         alt="phrase"
-        src={src}
+        src={process.env.PUBLIC_URL + src}
         ref={videoEl}
         width="33px">
       </video>

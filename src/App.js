@@ -1,8 +1,8 @@
 import './App.css';
 import React, { useState, createContext } from 'react';
 import Photo from './components/photo';
-// import OG from '/OG.png';
-// import BG from '/BG.png'
+// import OG from './OG.png';
+// import BG from './BG.png';
 
 export const AppContext = createContext();
 
@@ -18,7 +18,7 @@ function App() {
           background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
           display: display ? 'none' : 'flex'
         }}> 
-          <img src={OG} style={{width: '720px', height: '520px'}}></img>
+          <img src={process.env.PUBLIC_URL + '/OG.png'} style={{width: '720px', height: '520px'}}></img>
         </div>
 
         <div 
@@ -42,7 +42,7 @@ function App() {
           color: "white",
           fontWeight: 700
         }}> 
-          <img src={BG} style={{width: '100vw', height: '100vh'}}></img>
+          <img src={process.env.PUBLIC_URL + '/BG.png'} style={{width: '100vw', height: '100vh'}}></img>
         </div>
       </div>
     </AppContext.Provider>
