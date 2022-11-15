@@ -13,16 +13,16 @@ const Row = ({ rowNum, vidNum }) => {
         }}>
             {
                 rowColorMap[rowNum].map((hex, i) => {
-                    // if (hex === '#FF0000') {
-                    //     vidNum.current++;
-                    //     return (
-                    //         <Transmission src={vidSrcMap[vidNum.current > 12 ? 12 : vidNum.current]} key={`video-${vidNum.current}`}></Transmission>
-                    //     );
-                    // } else {
+                    if (hex === '#FF0000') {
+                        vidNum.current++;
+                        return (
+                            <Transmission src={vidSrcMap[vidNum.current > 12 ? 12 : vidNum.current]} key={`video-${vidNum.current}`}></Transmission>
+                        );
+                    } else {
                         return (
                             <Pixel color={hex} key={`pixel-1.${i}`}></Pixel>
                         );
-                    // }
+                    }
                 })
             }
         </div>
