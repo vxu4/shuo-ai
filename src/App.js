@@ -12,7 +12,7 @@ function App() {
   return (
     <AppContext.Provider value={{ display }}>
       <div className="App">
-        {/* <div 
+        <div 
         className="overlay-content" 
         style={{  
           background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
@@ -31,9 +31,9 @@ function App() {
           fontWeight: 700
         }}> 
           When I say Ai, I feel <button onClick={() => setDisplay(true)}>here</button>
-        </div> */}
+        </div>
         <Photo />
-        {/* <div 
+        <div 
         className="bg-content" 
         style={{  
           background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
@@ -43,7 +43,7 @@ function App() {
           fontWeight: 700
         }}> 
           <img src={BG} style={{width: '100vw', height: '100vh'}}></img>
-        </div> */}
+        </div>
       </div>
     </AppContext.Provider>
   );
