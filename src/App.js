@@ -64,7 +64,7 @@ function App() {
             <div className="title-bar-controls" style={{margin: '0px'}}>
               {/* <button aria-label="Minimize">minutae</button>
               <button aria-label="Maximize"> detailed </button> */}
-              <button aria-label="Close" style={{margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px'}}> remembrance </button>
+              <button aria-label="Close" style={{margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px'}}> {display ? 'remembrance' : ''} </button>
             </div>
           </div>
 

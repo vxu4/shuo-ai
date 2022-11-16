@@ -9,6 +9,7 @@ const Transmission = ({ src }) => {
 
   const unmute = (videoEl) => {
     videoEl.current.muted = false;
+    attemptPlay();
     setHover(true);
   }
   const attemptPlay = () => {
@@ -19,9 +20,9 @@ const Transmission = ({ src }) => {
       });
   };
 
-  useEffect(() => {
-    attemptPlay();
-  }, [hover]);
+  // useEffect(() => {
+  //   attemptPlay();
+  // }, [hover]);
 
   return (
     <div style={{ backgroundColor: '#FFFFFF', margin: 0, padding: 0, height: "10px", display: 'flex', cursor: 'pointer' }}>
