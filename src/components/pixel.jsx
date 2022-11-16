@@ -4,8 +4,8 @@ const Pixel = ({color}) => {
     return (
         <div style={{
             backgroundColor: color,
-            width: '13px',
-            height: '13px',
+            width: '10px',
+            height: '10px',
         }}>
         </div>
     );
