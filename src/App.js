@@ -50,7 +50,7 @@ function App() {
                 <button
                   aria-label="Close"
                   onClick={() => setRemember(true)}
-                  style={{ margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
+                  style={{ cursor: 'pointer', margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
                   {display ? 'remembrance' : ''}
                 </button>
               }
@@ -59,14 +59,14 @@ function App() {
                 <button
                   // aria-label="Close"
                   onClick={() => {setRemember(false); setDisplay(false)}}
-                  style={{ margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
+                  style={{ cursor: 'pointer', margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
                   {display ? 'repeat' : ''}
                 </button>
               }
             </div>
           </div>
           <div className="window-body">
-            <div className="bg-image" style={{ backgroundImage: remember ? 'none' : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+            <div className="bg-image" style={{ backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
               <Photo />
             </div>
           </div>
