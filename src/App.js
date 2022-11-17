@@ -7,9 +7,10 @@ export const AppContext = createContext();
 
 function App() {
   const [display, setDisplay] = useState(false);
+  const [remember, setRemember] = useState(false);
 
   return (
-    <AppContext.Provider value={{ display }}>
+    <AppContext.Provider value={{ display, remember }}>
       <div className="App">
         <div
           className="overlay-content"
@@ -23,7 +24,6 @@ function App() {
           className="overlay-content"
           style={{
             background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
-            // opacity: display ? 0 : 1,
             display: display ? 'none' : 'flex',
             color: "white",
             fontWeight: 700
@@ -31,11 +31,6 @@ function App() {
           <div style={{ width: 300 }} className="window">
             <div className="title-bar">
               <div className="title-bar-text">Memory Load Incomplete: </div>
-              {/* <div className="title-bar-controls">
-                <button aria-label="Minimize" />
-                <button aria-label="Maximize" />
-                <button aria-label="Close" />
-              </div> */}
             </div>
 
             <div className="window-body">
@@ -46,44 +41,19 @@ function App() {
             </div>
           </div>
         </div>
-
-        {/* <div 
-        className="overlay-content" 
-        style={{  
-          background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
-          // opacity: display ? 0 : 1,
-          display: display ? 'none' : 'flex',
-          color: "white",
-          fontWeight: 700
-        }}> 
-          When I say Ai, I feel <button onClick={() => setDisplay(true)}>here</button>
-        </div> */}
         <div style={{ width: 'auto' }} className="window">
           <div className="title-bar">
             <div className="title-bar-text">{display ? 'Transmission: Do you remember the strokes I taught you? Start at the top right corner. Hover. Go - write love into lost pixels. But don`t forget, listen to the presence within' : 'IMG_33-2x'}</div>
             <div className="title-bar-controls" style={{margin: '0px'}}>
-              {/* <button aria-label="Minimize">minutae</button>
-              <button aria-label="Maximize"> detailed </button> */}
-              <button aria-label="Close" style={{margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px'}}> {display ? 'remembrance' : ''} </button>
+              <button 
+              aria-label="Close" 
+              onClick={() => setRemember(true)}
+              style={{margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px'}}> {display ? 'remembrance' : ''} </button>
             </div>
           </div>
-
           <div className="window-body">
-            <div className="bg-image hi" style={{backgroundImage: `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
-
+            <div className="bg-image" style={{backgroundImage: remember ? 'none' : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
               <Photo />
-              {/* TODO: figure out how the overlay sizing should work */}
-              {/* <div
-                className="bg-content"
-                style={{
-                  background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
-                  // opacity: display ? 0 : 1,
-                  // display: display ? 'none' : 'flex',
-                  color: "white",
-                  fontWeight: 700
-                }}>
-                <img src={process.env.PUBLIC_URL + '/BG.png'} style={{ width: '1350px', height: 'auto' }}></img>
-            </div> */}
             </div>
           </div>
         </div>
