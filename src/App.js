@@ -44,22 +44,36 @@ function App() {
         <div style={{ width: 'auto' }} className="window">
           <div className="title-bar">
             <div className="title-bar-text">{display ? 'Transmission: Do you remember the strokes I taught you? Start at the top right corner. Hover. Go - write love into lost pixels. But don`t forget, listen to the presence within' : 'IMG_33-2x'}</div>
-            <div className="title-bar-controls" style={{margin: '0px'}}>
-              <button 
-              aria-label="Close" 
-              onClick={() => setRemember(true)}
-              style={{margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px'}}> {display ? 'remembrance' : ''} </button>
+            <div className="title-bar-controls" style={{ margin: '0px' }}>
+              {
+                display && !remember &&
+                <button
+                  aria-label="Close"
+                  onClick={() => setRemember(true)}
+                  style={{ margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
+                  {display ? 'remembrance' : ''}
+                </button>
+              }
+              {
+                remember &&
+                <button
+                  // aria-label="Close"
+                  onClick={() => {setRemember(false); setDisplay(false)}}
+                  style={{ margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
+                  {display ? 'repeat' : ''}
+                </button>
+              }
             </div>
           </div>
           <div className="window-body">
-            <div className="bg-image" style={{backgroundImage: remember ? 'none' : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat'}}>
+            <div className="bg-image" style={{ backgroundImage: remember ? 'none' : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
               <Photo />
             </div>
           </div>
         </div>
 
       </div>
-    </AppContext.Provider>
+    </AppContext.Provider >
   );
 }
 
