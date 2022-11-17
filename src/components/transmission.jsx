@@ -1,5 +1,4 @@
 import React, { useRef, useState, useEffect, useContext } from 'react';
-// import '../App.css';
 import { AppContext } from '../App';
 
 const Transmission = ({ src }) => {
@@ -43,7 +42,7 @@ const Transmission = ({ src }) => {
       OVERLAY TRIAL
       <div
         style={{
-          marginTop: '0px',
+          marginTop: '0px', 
           marginLeft: '-13px',
           // background: display ? 'rgba(6, 56, 82, 0.3)' : 'rgba(255, 255, 255, 1.0)',
           // visibility: display ? 'collapsed' : 'visible',

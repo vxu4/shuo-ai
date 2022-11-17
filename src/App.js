@@ -2,6 +2,7 @@ import React, { useState, createContext } from 'react';
 import Photo from './components/photo';
 import './App.css';
 import "98.css";
+import Message from './components/messages';
 
 export const AppContext = createContext();
 
@@ -26,31 +27,19 @@ function App() {
           className="overlay-content"
           style={{
             background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
-            display: display ? 'none' : 'flex'
-          }}>
-          <img src={process.env.PUBLIC_URL + '/OG.png'} style={{ width: '570px', height: '400px' }}></img>
-        </div>
-        <div
-          className="overlay-content"
-          style={{
-            background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0)",
             display: display ? 'none' : 'flex',
-            color: "white",
-            fontWeight: 700
+            marginTop: '10px',
+            marginLeft: '-5px',
           }}>
-          <div style={{ width: 300 }} className="window">
-            <div className="title-bar">
-              <div className="title-bar-text">Memory Load Incomplete: </div>
-            </div>
-
-            <div className="window-body">
-              <p style={{ textAlign: "center" }}>Could not remember how to write your love, but when I say ai, I feel </p>
-              <div className="field-row" style={{ justifyContent: "center" }}>
-                <button style={{ cursor: "pointer" }} onClick={() => setDisplay(true)}>here</button>
-              </div>
-            </div>
-          </div>
+          <img src={process.env.PUBLIC_URL + '/OG.png'} style={{ width: '560px', height: '400px' }}></img>
         </div>
+        {
+          display ?
+            <Message onClick={() => setRemember(true)}></Message>
+            :
+            <Message onClick={() => setDisplay(true)}></Message>
+
+        }
         <div style={{ width: 'auto' }} className="window">
           <div className="title-bar">
             <div className="title-bar-text">{transmission()}</div>
