@@ -34,6 +34,13 @@
   color: #61dafb;
 }
 
+.home {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
 .overlay-content {
   position: absolute;
   display: flex;

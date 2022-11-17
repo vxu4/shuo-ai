@@ -10,12 +10,12 @@ function App() {
   const [remember, setRemember] = useState(false);
   const transmission = () => {
     if (remember) {
-      return('What is found and left in the tracing?')
+      return ('What is found and left in the tracing?')
     }
     else if (display) {
-      return('Transmission: Do you remember the strokes I taught you? Start at the top right corner. Hover. Go - write love into lost pixels. But don`t forget, listen to the presence within')
+      return ('Transmission: Do you remember the strokes I taught you? Start at the top right corner. Hover. Go - write love into lost pixels. But don`t forget, listen to the presence within')
     } else {
-      return('IMG_33-2x')
+      return ('IMG_33-2x')
     }
   }
 
@@ -68,7 +68,7 @@ function App() {
                 remember &&
                 <button
                   // aria-label="Close"
-                  onClick={() => {setRemember(false); setDisplay(false)}}
+                  onClick={() => { setRemember(false); setDisplay(false) }}
                   style={{ cursor: 'pointer', margin: '0px', paddingLeft: '15px', paddingRight: '5px', paddingBottom: '2px' }}>
                   repeat
                 </button>
@@ -76,7 +76,19 @@ function App() {
             </div>
           </div>
           <div className="window-body">
-            <div className="bg-image" style={{ backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+            <div className="bg-image" style={{ position: 'relative', backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+              {remember &&
+                <div className="home">
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    style={{ backgroundColor: "#FFFFFF", width: "100%", objectFit: "cover", height: "100%", margin: 0, padding: 0 }}
+                  >
+                    <source src={process.env.PUBLIC_URL + '/water_11.mp4'} type="video/mp4" />
+                  </video>
+                </div>
+              }
               <Photo />
             </div>
           </div>
