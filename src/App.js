@@ -1,4 +1,4 @@
-import React, { useState, createContext } from 'react';
+import React, { useState, useRef, createContext } from 'react';
 import Photo from './components/photo';
 import './App.css';
 import "98.css";
@@ -21,7 +21,6 @@ function App() {
       return ('IMG_33+23')
     // }
   }
-
   return (
     <AppContext.Provider value={{ display, remember }}>
       <div className="App">
@@ -49,10 +48,12 @@ function App() {
             <div className="bg-image" style={{ position: 'relative', backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
               {remember &&
                 <div className="home">
+                  
                   <video
                     autoPlay
-                    muted
+                    
                     loop
+                    // onMouseEnter={() => unmute(videoEl)}
                     style={{ backgroundColor: "#FFFFFF", width: "100%", objectFit: "cover", height: "100%", margin: 0, padding: 0 }}
                   >
                     <source src={process.env.PUBLIC_URL + '/water_11.mp4'} type="video/mp4" />
