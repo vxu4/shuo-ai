@@ -1,5 +1,4 @@
-import React, { useRef, useState, useEffect, useContext } from 'react';
-import { AppContext } from '../App';
+import React, { useRef, useState } from 'react';
 
 const Transmission = ({ src }) => {
   const videoEl = useRef(null);

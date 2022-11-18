@@ -1,8 +1,9 @@
-import React, { useState, useRef, useContext, useEffect } from 'react';
+import React, { useRef, useContext, useEffect } from 'react';
 import { AppContext } from '../App';
 import Row from './row';
 
-const Photo = ({ }) => {
+
+const Photo = () => {
     const videoCount = useRef(0);
     const { display } = useContext(AppContext);
     useEffect(() => {
@@ -56,20 +57,6 @@ const Photo = ({ }) => {
             <Row rowNum={37} vidNum={videoCount} />
             <Row rowNum={38} vidNum={videoCount} />
             <Row rowNum={39} vidNum={videoCount} /> 
-
-
-
-
-            {/* <Row02></Row02>
-            <Row03></Row03>
-            <Row04></Row04>
-            <Row05></Row05>
-            <Row06></Row06>
-            <Row07></Row07>
-            <Row08></Row08>
-            <Row09></Row09> */}
-            {/* <Row rowNum={9} vidNum={videoCount} /> */}
-
         </div>
     );
 };

@@ -4,7 +4,7 @@ import '../App.css';
 import "98.css";
 
 const Reminder = ({onClick}) => {
-    const { display, } = useContext(AppContext);
+    const { display } = useContext(AppContext);
     if (!display) {
         return (
             <div

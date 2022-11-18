@@ -1,4 +1,4 @@
-import React, { useState, useRef, createContext } from 'react';
+import React, { useState, createContext } from 'react';
 import Photo from './components/photo';
 import './App.css';
 import "98.css";
@@ -64,7 +64,6 @@ function App() {
             </div>
           </div>
         </div>
-
       </div>
     </AppContext.Provider >
   );
