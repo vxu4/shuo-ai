@@ -16,7 +16,7 @@ const Row = ({ rowNum, vidNum }) => {
                     if (hex === '#FF0000') {
                         vidNum.current++;
                         return (
-                            <Transmission src={vidSrcMap[vidNum.current > 12 ? 12 : vidNum.current]} key={`video-${vidNum.current}`}></Transmission>
+                            <Transmission src={vidSrcMap[vidNum.current > 23 ? 23 : vidNum.current]} key={`video-${vidNum.current}`}></Transmission>
                         );
                     } else {
                         return (
