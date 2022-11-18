@@ -1,14 +1,29 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef, useState, useEffect, useContext } from 'react';
+import { AppContext } from '../App';
 
 const Transmission = ({ src }) => {
   const videoEl = useRef(null);
   const [hover, setHover] = useState(false);
+  const { display, remember } = useContext(AppContext)
+
+  // var playTimeout;    
+  // videoEl.current?.onplay("play", function(e) {
+  //     playTimeout = setTimeout(function() {
+  //       videoEl.pause();
+  //         videoEl.setCurrentTime(0); // Restarts video
+  //     }, 30000); // 30 seconds in ms
+  // });
+
+  // videoEl.current?.onpause("pause", function(e) {
+  //     clearTimeout(playTimeout);
+  // });
 
   const unmute = (videoEl) => {
     videoEl.current.muted = false;
     attemptPlay();
     setHover(true);
   }
+
   const attemptPlay = () => {
     videoEl &&
       videoEl.current &&
@@ -17,9 +32,9 @@ const Transmission = ({ src }) => {
       });
   };
 
-  // useEffect(() => {
-  //   attemptPlay();
-  // }, [hover]);
+  useEffect(() => {
+      videoEl.current.muted = true;
+  }, [remember]);
 
   return (
     <div style={{ backgroundColor: '#FFFFFF', margin: 0, padding: 0, height: "10px", display: 'flex', cursor: 'pointer' }}>

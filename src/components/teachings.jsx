@@ -20,10 +20,12 @@ const Water = ({onClick}) => {
                         <div className="title-bar-text">Transmissions: </div>
                     </div>
                     <div className="window-body" style={{textAlign: 'right'}}>
-                        "Water remembers everything it travels <br/>over and through. <br/>
+                        {/* "Water remembers everything it travels <br/>over and through. <br/>
                         If you have been in water, <br/>part of you remains there still." <br/>
-                        -Natalie Diaz <br/><br/>
-                        What loves can the water carry back to us as teachings? <br/><br/>
+                        -Natalie Diaz <br/><br/> */}
+                        How much capacity for love water must have, <br/> 
+                        to carry generations in its memory. <br/><br/>
+                        What love teachings can the water carry back to us? <br/><br/>
                         {
                         onClick &&
                             <div className="field-row" style={{ justifyContent: "right", padding: '10px 0px 5px'}}>
