@@ -4,7 +4,6 @@ import { AppContext } from '../App';
 const Transmission = ({ src }) => {
   const videoEl = useRef(null);
   const [hover, setHover] = useState(false);
-  const { display } = useContext(AppContext);
 
   const unmute = (videoEl) => {
     videoEl.current.muted = false;
