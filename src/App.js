@@ -31,7 +31,7 @@ function App() {
             display: display ? 'none' : 'flex',
           }}>
           <img alt="family eating dinner" src={process.env.PUBLIC_URL + '/OG.png'} 
-          style={{margin: '10px -5px', width: '560px', height: '400px' }}></img>
+          style={{padding: '18px 8px 0px 0px ', width: '560px', height: '400px' }}></img>
         </div>
       
           
