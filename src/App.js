@@ -34,9 +34,9 @@ function App() {
           <div className="title-bar-text"></div>
         </div>
         <div className="window-body" style={{padding: "0px 10px"}}>
-          Please enter via PC window for Wo I Ni writing practice. Prerecorded practice here: 
+          Please enter <strong><em>Writing Practice: Wo I Ni </em></strong> <br/> via PC window. See video below: <br/>
           <div className="field-row" style={{ justifyContent: "center", padding: '10px 0px 3px' }}>
-            <button style={{ cursor: "pointer" }} onClick={() => window.open("https://vimeo.com/772548080")}>here</button>
+            <button style={{ cursor: "pointer" }} onClick={() => window.open("https://vimeo.com/772548080")}>Prerecorded practice </button>
         </div>
         </div>
       </div>
