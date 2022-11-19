@@ -33,7 +33,7 @@ function App() {
         <div className="title-bar">
           <div className="title-bar-text"></div>
         </div>
-        <div className="window-body" style={{padding: "0px 10px"}}>
+        <div className="window-body" style={{padding: "0px 5px"}}>
           Please enter <strong><em>Writing Practice: Wo I Ni </em></strong> <br/> via PC window. See video below: <br/>
           <div className="field-row" style={{ justifyContent: "center", padding: '10px 0px 3px' }}>
             <button style={{ cursor: "pointer" }} onClick={() => window.open("https://vimeo.com/772548080")}>Prerecorded practice </button>
