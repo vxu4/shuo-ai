@@ -9,6 +9,9 @@ import Teachings from './components/teachings';
 export const AppContext = createContext();
 
 function App() {
+  const [matches, setMatches] = useState(
+    window.matchMedia("(min-width: 768px)").matches
+  )
   const [display, setDisplay] = useState(false);
   const [remember, setRemember] = useState(false);
   const transmission = () => {
@@ -24,48 +27,63 @@ function App() {
   return (
     <AppContext.Provider value={{ display, remember }}>
       <div className="App">
-        <div
-          className="overlay-content"
-          style={{
-            background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
-            display: display ? 'none' : 'flex',
-          }}>
-          <img alt="family eating dinner" src={process.env.PUBLIC_URL + '/OG.png'} 
-          style={{padding: '18px 8px 0px 0px ', width: '560px', height: '400px' }}></img>
-        </div>
-      
-          
-        <Message onClick={() => setDisplay(true)}></Message> 
-        <Reminders onClick={() => setRemember(true)}></Reminders> 
-        <Teachings onClick={() => {setDisplay(false); setRemember(false)}}></Teachings> 
-
-        
+        { !matches 
+        ? 
         <div style={{ width: 'auto' }} className="window">
-          <div className="title-bar">
-            <div className="title-bar-text">{transmission()}</div>
-          </div>
-          <div className="window-body">
-            <div className="bg-image" style={{ position: 'relative', backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
-              {remember &&
-                <div className="home">
-                  
-                  <video
-                    autoPlay
-                    
-                    loop
-                    // onMouseEnter={() => unmute(videoEl)}
-                    style={{ backgroundColor: "#FFFFFF", width: "100%", objectFit: "cover", height: "100%", margin: 0, padding: 0 }}
-                  >
-                    <source src={process.env.PUBLIC_URL + '/water_11.mp4'} type="video/mp4" />
-                  </video>
-                </div>
-              }
-              <Photo />
-            </div>
-          </div>
+        <div className="title-bar">
+          <div className="title-bar-text"></div>
+        </div>
+        <div className="window-body" style={{padding: "0px 10px"}}>
+          Please enter via desktop windows. Prerecorded writing practice here: 
+          <div className="field-row" style={{ justifyContent: "center", padding: '10px 0px 3px' }}>
+            <button style={{ cursor: "pointer" }} onClick={() => window.open("https://vimeo.com/772548080")}>here</button>
+        </div>
         </div>
       </div>
-    </AppContext.Provider >
+        :
+        <>
+          <div
+            className="overlay-content"
+            style={{
+              background: display ? "rgba(255, 255, 255, 0)" : "rgba(255, 255, 255, 0.4)",
+              display: display ? 'none' : 'flex',
+            }}>
+            <img alt="family eating dinner" src={process.env.PUBLIC_URL + '/OG.png'} 
+            style={{padding: '18px 8px 0px 0px ', width: '560px', height: '400px' }}></img>
+          </div>
+          
+          <Message onClick={() => setDisplay(true)}></Message> 
+          <Reminders onClick={() => setRemember(true)}></Reminders> 
+          <Teachings onClick={() => {setDisplay(false); setRemember(false)}}></Teachings> 
+
+          <div style={{ width: 'auto' }} className="window">
+            <div className="title-bar">
+              <div className="title-bar-text">{transmission()}</div>
+            </div>
+            <div className="window-body">
+              <div className="bg-image" style={{ position: 'relative', backgroundImage: remember ? `url(${process.env.PUBLIC_URL + '/water_02.png'})` : `url(${process.env.PUBLIC_URL + '/BG.png'})`, backgroundSize: 'contain', backgroundRepeat: 'no-repeat' }}>
+                {remember &&
+                  <div className="home">
+                    
+                    <video
+                      autoPlay
+                      
+                      loop
+                      // onMouseEnter={() => unmute(videoEl)}
+                      style={{ backgroundColor: "#FFFFFF", width: "100%", objectFit: "cover", height: "100%", margin: 0, padding: 0 }}
+                    >
+                      <source src={process.env.PUBLIC_URL + '/water_11.mp4'} type="video/mp4" />
+                    </video>
+                  </div>
+                }
+                <Photo />
+              </div>
+            </div>
+          </div>
+        </>
+        }
+      </div>
+    </AppContext.Provider>
   );
 }
 
