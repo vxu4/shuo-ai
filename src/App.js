@@ -9,7 +9,7 @@ import Teachings from './components/teachings';
 export const AppContext = createContext();
 
 function App() {
-  const [matches, setMatches] = useState(
+  const [matches] = useState(
     window.matchMedia("(min-width: 768px)").matches
   )
   const [display, setDisplay] = useState(false);
@@ -34,7 +34,7 @@ function App() {
           <div className="title-bar-text"></div>
         </div>
         <div className="window-body" style={{padding: "0px 10px"}}>
-          Please enter via desktop windows. Prerecorded writing practice here: 
+          Please enter via PC window for Wo I Ni writing practice. Prerecorded practice here: 
           <div className="field-row" style={{ justifyContent: "center", padding: '10px 0px 3px' }}>
             <button style={{ cursor: "pointer" }} onClick={() => window.open("https://vimeo.com/772548080")}>here</button>
         </div>

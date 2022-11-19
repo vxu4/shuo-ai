@@ -15,7 +15,7 @@ const Water = ({onClick}) => {
                     bottom: 0,
                     right: 0
                 }}>
-                <div style={{ width: 300, marginRight: '3vw', marginBottom: '10vh' }} className="window">
+                <div style={{ width: 300, marginRight: '3vw', marginBottom: '9vh' }} className="window">
                     <div className="title-bar">
                         <div className="title-bar-text">Transmissions: </div>
                     </div>

@@ -17,7 +17,7 @@ const Teaching = ({onClick}) => {
                     top: 0,
                     left: 0
                 }}>
-                <div style={{ width: 300, marginLeft: '3vw', marginTop: '10vh' }} className="window">
+                <div style={{ width: 300, marginLeft: '3vw', marginTop: '9vh' }} className="window">
                     <div className="title-bar">
                         <div className="title-bar-text">Reminders: </div>
                     </div>
