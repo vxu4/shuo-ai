@@ -87,7 +87,7 @@ function App() {
                     width="560px"
                     height="380px"
                     // onMouseEnter={() => unmute(videoEl)}
-                    style={{ width: '570px', height: '400px', opacity: '53%', backgroundColor: "#FFFFFF",objectFit: "cover", margin: 0, padding: 0 }}
+                    style={{ width: '570px', height: '400px', opacity: '53%', backgroundColor: "#FFFFFF",objectFit: "cover", margin: "-2px", padding: 0 }}
                   >
                     <source src={process.env.PUBLIC_URL + '/water_11.mp4'} type="video/mp4" />
                   </video>
