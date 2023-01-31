@@ -1,12 +1,12 @@
-import React, { useRef, useState, useEffect, useContext } from 'react';
-import { AppContext } from '../App';
+import React, { useRef, useState, useEffect, useContext } from "react";
+import { AppContext } from "../App";
 
 const Transmission = ({ src }) => {
   const videoEl = useRef(null);
   const [hover, setHover] = useState(false);
-  const { display, remember } = useContext(AppContext)
+  const { display, remember } = useContext(AppContext);
 
-  // var playTimeout;    
+  // var playTimeout;
   // videoEl.current?.onplay("play", function(e) {
   //     playTimeout = setTimeout(function() {
   //       videoEl.pause();
@@ -22,25 +22,41 @@ const Transmission = ({ src }) => {
     videoEl.current.muted = false;
     attemptPlay();
     setHover(true);
-  }
+  };
 
   const attemptPlay = () => {
     videoEl &&
       videoEl.current &&
-      videoEl.current.play().catch(error => {
+      videoEl.current.play().catch((error) => {
         console.error("Error attempting to play", error);
       });
   };
 
   useEffect(() => {
-      videoEl.current.muted = true;
+    videoEl.current.muted = true;
   }, [remember]);
 
   return (
-    <div style={{ backgroundColor: '#FFFFFF', margin: 0, padding: 0, height: "10px", display: 'flex', cursor: 'pointer' }}>
+    <div
+      style={{
+        backgroundColor: "#FFFFFF",
+        margin: 0,
+        padding: 0,
+        height: "10px",
+        display: "flex",
+        cursor: "pointer",
+      }}
+    >
       <video
         controls={!hover}
-        style={{ backgroundColor: "#FFFFFF", opacity: hover ? 1 : 0.33, width: "10px", height: "10px", margin: 0, padding: 0 }}
+        style={{
+          backgroundColor: "#FFFFFF",
+          opacity: hover ? 1 : 0.33,
+          width: "10px",
+          height: "10px",
+          margin: 0,
+          padding: 0,
+        }}
         playsInline
         loop
         muted
@@ -49,8 +65,9 @@ const Transmission = ({ src }) => {
         alt="phrase"
         src={process.env.PUBLIC_URL + src}
         ref={videoEl}
-        width="33px">
-      </video>
+        width="33px"
+      ></video>
+
       {/* 
       OVERLAY TRIAL
       <div
@@ -66,7 +83,6 @@ const Transmission = ({ src }) => {
           height: '13px'
         }}
       ></div> */}
-
     </div>
   );
 };
