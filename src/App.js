@@ -51,15 +51,16 @@ function App() {
             </div>
           }
           
-          {matches && <Message onClick={() => setDisplay(true)}></Message> }
+          {matches && 
+          <>
+          <Message onClick={() => setDisplay(true)}></Message> 
           <Reminders onClick={() => setRemember(true)}></Reminders> 
           <Teachings onClick={() => {setDisplay(false); setRemember(false)}}></Teachings> 
 
           <div className="bg-image" 
             style={{
             position: 'absolute',
-          
-          }}
+            }}
             >
               {remember &&
               //WATER VIDEO
@@ -76,7 +77,9 @@ function App() {
                 </div>
               }
               {display && <Photo />}
-            </div>
+          </div>
+          </>
+          }
       </div>
     </AppContext.Provider>
   );
