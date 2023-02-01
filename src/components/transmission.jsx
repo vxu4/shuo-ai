@@ -4,19 +4,7 @@ import { AppContext } from "../App";
 const Transmission = ({ src }) => {
   const videoEl = useRef(null);
   const [hover, setHover] = useState(false);
-  const { display, remember } = useContext(AppContext);
-
-  // var playTimeout;
-  // videoEl.current?.onplay("play", function(e) {
-  //     playTimeout = setTimeout(function() {
-  //       videoEl.pause();
-  //         videoEl.setCurrentTime(0); // Restarts video
-  //     }, 30000); // 30 seconds in ms
-  // });
-
-  // videoEl.current?.onpause("pause", function(e) {
-  //     clearTimeout(playTimeout);
-  // });
+  const { remember } = useContext(AppContext);
 
   const unmute = (videoEl) => {
     videoEl.current.muted = false;
@@ -67,22 +55,6 @@ const Transmission = ({ src }) => {
         ref={videoEl}
         width="33px"
       ></video>
-
-      {/* 
-      OVERLAY TRIAL
-      <div
-        style={{
-          marginTop: '0px', 
-          marginLeft: '-13px',
-          // background: display ? 'rgba(6, 56, 82, 0.3)' : 'rgba(255, 255, 255, 1.0)',
-          // visibility: display ? 'collapsed' : 'visible',
-          zIndex: 10,
-          display: display ? 'inline' : 'none',
-
-          width: '13px',
-          height: '13px'
-        }}
-      ></div> */}
     </div>
   );
 };

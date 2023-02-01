@@ -19,23 +19,8 @@ const Reminder = ({ onClick }) => {
           left: 0,
         }}
       >
-        {/* <div style={{ width: 300 }} className="window">
-                    <div className="title-bar">
-                        <div className="title-bar-text">Memory Load Incomplete: </div>
-                    </div>
-                    <div className="window-body">
-                    <p style={{ textAlign: "center" }}>
-                    Could not remember how to write your love, but when I say ai, I feel            
-                    </p>
-                    {
-                    onClick &&
-                        <div className="field-row" style={{ justifyContent: "center" }}>
-                            <button style={{ cursor: "pointer" }} onClick={onClick}>here</button>
-                        </div>
-                    }
-                    </div>
-                </div> */}
         <img
+          alt="Opening note, admitting I couldn't remember how to write ai, love. But when I say ai, I feel"
           style={{
             width: "33%",
             top: "27%",
@@ -46,10 +31,15 @@ const Reminder = ({ onClick }) => {
         ></img>
         {onClick && (
           <button
-            style={{ cursor: "pointer", color: "transparent" }}
+            style={{
+              cursor: "pointer",
+              background: "transparent",
+              boxShadow: "none",
+            }}
             onClick={onClick}
           >
             <img
+              alt="here"
               style={{
                 width: "23%",
                 top: "38%",

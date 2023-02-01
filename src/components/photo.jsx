@@ -15,8 +15,6 @@ const Photo = () => {
         display: "flex",
         flexDirection: "column",
         zIndex: 1,
-        // borderTop: '1px solid white',
-        // borderLeft: '1px solid gray',
       }}
     >
       {/* pixel rows go here. note rowNum is row - 1 bc count starts at 0*/}

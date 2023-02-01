@@ -18,26 +18,6 @@ const Teaching = ({ onClick }) => {
           left: 0,
         }}
       >
-        {/* <div style={{ width: 300, marginLeft: '3vw', marginTop: '9vh' }} className="window">
-                    <div className="title-bar">
-                        <div className="title-bar-text">Reminders: </div>
-                    </div>
-                    <div className="window-body" style={{textAlign: 'left'}}>
-                        Do you remember the strokes I taught you? <br/> <br/> 
-                        Start at the top right corner.<br/> 
-                        Hover-<br/>
-                        Go - <br/>
-                        write love into lost pixels. <br/><br/>
-                        But don`t forget to listen, <br/> 
-                        {
-                        onClick &&
-                            <div className="field-row" style={{ padding: '10px 0px 5px', justifyContent: "right" }}>
-                                <button style={{ cursor: "pointer" }} onClick={onClick}>remembering</button>
-                            </div>
-                        }
-                    </div>
-                </div> */}
-
         {onClick && (
           <button
             style={{
@@ -48,6 +28,7 @@ const Teaching = ({ onClick }) => {
             onClick={onClick}
           >
             <img
+              alt="Reminder note, reminding you gently how to write the word ai, love. And asking you to remember."
               style={{
                 width: "333%",
                 top: "433%",
